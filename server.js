@@ -49,7 +49,7 @@ res.status(201).json(novoPokemon);
 
 // ROTA DELETE - Remover Pokemon pelo ID
 app.delete('/pokemons/:id', (req, res) => {
-    const { id } = req.params;
+    const { id } = req.params;     
     const index = pokemons.findIndex(registro => registro.id == id);
 
     if (index !== -1) {
@@ -62,7 +62,7 @@ app.delete('/pokemons/:id', (req, res) => {
 
 // ROTA PUT - Atualizar um registro do pokemon por ID
 app.put('/pokemons/:id', (req, res) => {
-    const  id  =  parseInt(req.params); // Converte o id da URL para número
+    const  id  =  parseInt(req.params.id); // Converte o id da URL para número
     const index = pokemons.findIndex(pokemon => pokemon.id === id); // Procura o Pokémon no array
 
 
