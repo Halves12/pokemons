@@ -8,10 +8,46 @@ app.use(express.json());
 
 // Array para armazenar a lista de tarefas
 let pokemons = [
-{id: 1, nome: 'Bulbasaur', elemento: 'Planta', evolucao: 'Ivysaur' },
-{id: 2, nome: 'Charmander', elemento: 'Fogo', evolucao: 'Charmeleon'},
-{id: 3, nome: 'Squirtle', elemento: 'Água', evolucao: 'Wartortle'},
-{id: 4, nome: 'Pikachu', elemento: 'Eletrico', evolucao: 'Raichu'}
+    {
+        id: 1,
+        nome: 'Bulbasaur',
+        elemento: 'Planta',
+        evolucao: {
+            proximaEvolucao: 'Ivysaur',
+        }
+    },
+
+    {
+        id: 2,
+        nome: 'Charmander',
+        elemento: 'Fogo',
+        evolucao: {
+            proximaEvolucao: 'Charmeleon'
+        }
+    },
+
+
+
+    {
+        id: 3,
+        nome: 'Squirtle',
+        elemento: 'Água',
+        evolucao: {
+            proximaEvolucao: 'Wartortle'
+        }
+
+    },
+
+    {
+        id: 4,
+        nome: 'Pikachu',
+        elemento: 'Eletrico',
+        evolucao: {
+            proximaEvolucao: 'Raichu'
+        }
+
+    }
+
 ];
 
 // função para buscar pokémon pelo ID
