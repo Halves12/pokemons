@@ -13,7 +13,8 @@ let pokemons = [
         nome: 'Bulbasaur',
         elemento: 'Planta',
         evolucao: {
-            proximaEvolucao: 'Ivysaur',
+            proximaEvolucao: ['Ivysaur', 'Venusaur']
+                               
         }
     },
 
@@ -22,7 +23,7 @@ let pokemons = [
         nome: 'Charmander',
         elemento: 'Fogo',
         evolucao: {
-            proximaEvolucao: 'Charmeleon'
+            proximaEvolucao: ['Charmeleon', 'Charizard']
         }
     },
 
@@ -33,7 +34,7 @@ let pokemons = [
         nome: 'Squirtle',
         elemento: 'Água',
         evolucao: {
-            proximaEvolucao: 'Wartortle'
+            proximaEvolucao: ['Wartortle', 'Blaistoise']
         }
 
     },
